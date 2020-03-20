@@ -1,0 +1,40 @@
+{
+  "name": "@mersocarlin/api-error",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "yarn tsc --project tsconfig.json --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mersocarlin/api-error.git"
+  },
+  "keywords": ["error", "exception"],
+  "author": "Hemerson Carlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mersocarlin/api-error/issues"
+  },
+  "homepage": "https://github.com/mersocarlin/api-error#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.2",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn test"
+    }
+  }
+}
