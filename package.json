@@ -1,6 +1,6 @@
 {
   "name": "@mersocarlin/api-error",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Named API errors with original status code and custom message.",
   "main": "lib/index.js",
   "module": "lib/index.js",
@@ -16,7 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/mersocarlin/api-error.git"
   },
-  "keywords": ["error", "exception"],
+  "keywords": [
+    "error",
+    "exception"
+  ],
   "author": "Hemerson Carlin",
   "license": "MIT",
   "bugs": {
