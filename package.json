@@ -1,6 +1,6 @@
 {
   "name": "@mersocarlin/api-error",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Named API errors with original status code and custom message.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
