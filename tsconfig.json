@@ -1,23 +1,15 @@
 {
   "compilerOptions": {
-    /* Basic Options */
-    "target": "es5",
-    "module": "CommonJS",
-    "lib": ["dom", "es2015", "es5", "es6"],
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "lib",
-    "rootDir": "src",
-    
-    /* Strict Type-Checking Options */
+    "module": "ESNext",
+    "lib": ["dom", "esnext"],
     "strict": true,
-    "alwaysStrict": true,
-
-    /* Module Resolution Options */
+    "moduleResolution": "Node",
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "esModuleInterop": true,
-    
-    /* Advanced Options */
-    "forceConsistentCasingInFileNames": true
+    "resolveJsonModule": true
   },
-  "exclude": ["**/src/**/*.spec.ts", "lib"]
+  "include": ["src/**/*", "types/**/*"],
+  "exclude": ["src/**/*.spec.ts", "src/fixtures", "lib", "node_modules"]
 }
